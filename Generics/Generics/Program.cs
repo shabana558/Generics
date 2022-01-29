@@ -10,13 +10,13 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            int[] intArray = { 1, 2, 3, 4, 5 };
+            int[] intArray = { 1, 2, 3, 4 };
             double[] doubleArray = { 1.1, 2.2, 3.3, 4.4 };
-            char[] charArray = { 'H', 'A', 'I', };
+            char[] charArray = { 'H', 'A', 'I','I' };
 
-            PrintArray.toprint(intArray);
-            PrintArray.toprint(doubleArray);
-            PrintArray.toprint(charArray);
+            PrintArray.toprint<int>(intArray);
+            PrintArray.toprint<double>(doubleArray);
+            PrintArray.toprint<char>(charArray);
 
         }
     }
